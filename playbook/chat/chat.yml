@@ -1,0 +1,8 @@
+# Run this playbook on all hosts
+- hosts: all
+
+  # The list under tasks are the tasks I want to perform
+  tasks:
+  - package:
+     name: firefox
+     state: present  
